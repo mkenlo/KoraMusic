@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginTop="@dimen/spacing_small"
+    android:layout_marginBottom="@dimen/spacing_small"
+    android:paddingTop="@dimen/spacing_small"
+    android:paddingBottom="@dimen/spacing_small"
+    android:paddingRight="@dimen/spacing_small">
+
+
+    <ImageView
+        android:id="@+id/artist_cover_img"
+        android:layout_width="4@dimen/spacing_small"
+        android:layout_height="4@dimen/spacing_small"
+        android:src="@drawable/artist"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artist_name_sample"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/artist_cover_img"
+        android:paddingLeft="@dimen/spacing_small"
+        android:paddingBottom="@dimen/spacing_small"/>
+    <TextView
+        android:id="@+id/artist_num_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="77 songs"
+        android:layout_below="@id/artist_name"
+        android:layout_toRightOf="@id/artist_cover_img"
+        android:paddingLeft="@dimen/spacing_small"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_vert"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:background="@color/colorPrimaryLight"/>
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mkenlo.koramusic.GenreActivity"
+    android:padding="@dimen/spacing_medium">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genre and Moods"
+        android:textAllCaps="true"
+        android:layout_marginBottom="@dimen/spacing_small"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="@dimen/spacing_small"/>
+
+    <LinearLayout
+        style="@style/categoryCard"
+        android:background="@color/red_400">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toys" />
+
+        <TextView
+            style="@style/categoryTextView"
+            android:text="Hip Hop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/categoryCard"
+        android:background="@color/blue_100">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toys" />
+
+        <TextView
+            style="@style/categoryTextView"
+            android:text="RnB" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/categoryCard"
+        android:background="@color/orange_200">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toys" />
+
+        <TextView
+            style="@style/categoryTextView"
+            android:text="Soul" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/categoryCard"
+        android:background="@color/red_100">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toys" />
+
+        <TextView
+            style="@style/categoryTextView"
+            android:text="Reggae" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/categoryCard"
+        android:background="@color/purple_100">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toys" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/categoryTextView"
+            android:text="Jazz" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/categoryCard"
+        android:background="@color/pink_200">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toys" />
+
+        <TextView
+            style="@style/categoryTextView"
+            android:text="Classic" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right" />
+    </LinearLayout>
+
+
+</LinearLayout>
