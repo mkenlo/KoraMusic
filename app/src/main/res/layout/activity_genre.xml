@@ -5,25 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mkenlo.koramusic.GenreActivity"
-    android:padding="@dimen/spacing_medium">
+    android:padding="@dimen/spacing_medium"
+    tools:context="com.mkenlo.koramusic.GenreActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small"
         android:text="@string/activity_genre_label"
-        android:textAllCaps="true"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:textAllCaps="true" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorPrimary"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@color/colorPrimary" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_genre_desc"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:text="@string/activity_genre_desc" />
 
     <LinearLayout
         style="@style/categoryCard"

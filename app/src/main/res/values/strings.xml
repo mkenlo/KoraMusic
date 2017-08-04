@@ -3,11 +3,6 @@
 
 
     <string name="font_family_light">sans-serif-light</string>
-    <string name="font_family_medium">sans-serif-medium</string>
-    <string name="font_family_regular">sans-serif</string>
-    <string name="font_family_condensed">sans-serif-condensed</string>
-    <string name="font_family_black">sans-serif-black</string>
-    <string name="font_family_thin">sans-serif-thin</string>
 
     <string name="artist_name_sample">Pharell Williams</string>
     <string name="song_title_sample">Happy</string>
@@ -20,6 +15,8 @@
     <string name="activity_playlist_desc"> This activity display user\'s playlist</string>
     <string name="activity_song_desc"> This activity displays a list of song from an album of an artist </string>
     <string name="activity_payment_desc"> This activity shows the use of Google Pay API </string>
+    <string name="activity_payment_desc_2">The Android Pay API offers a quick and easy path to enable secure, one touch payments. \n It provided methods to request and receive encrypted shipping and payment information about the user, to allow the user to change or update their information and to execute a transaction.</string>
+
 
     <string name="activity_main_label"> Browse Categories </string>
     <string name="activity_album_label"> Albums </string>

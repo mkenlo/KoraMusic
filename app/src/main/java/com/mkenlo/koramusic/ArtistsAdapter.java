@@ -35,19 +35,15 @@ public class ArtistsAdapter extends BaseAdapter {
     }
 
     @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
-
+    public long getItemId(int position) { return position;   }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ViewHolder holder;
         LayoutInflater mInflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-        if (convertView == null){
-            convertView = mInflater.inflate(R.layout.artist_list_item,null);
+        if (convertView == null) {
+            convertView = mInflater.inflate(R.layout.artist_list_item, null);
             holder = new ViewHolder();
 
             holder.artist_name = (TextView) convertView.findViewById(R.id.artist_name);
@@ -56,7 +52,7 @@ public class ArtistsAdapter extends BaseAdapter {
             Artists artist = list_artists.get(position);
 
             holder.artist_name.setText(artist.name);
-            holder.artist_num_songs.setText(String.valueOf(artist.albums.size())+" Album");
+            holder.artist_num_songs.setText(String.valueOf(artist.albums.size()) + " Album");
         }
 
         return convertView;

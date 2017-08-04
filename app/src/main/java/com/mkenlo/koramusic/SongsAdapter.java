@@ -38,20 +38,15 @@ public class SongsAdapter extends BaseAdapter {
     }
 
     @Override
-    public long getItemId(int position) {
-        //return list_songs.indexOf(getItemId(position));
-        return position;
-    }
-
-
+    public long getItemId(int position) {  return position;  }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ViewHolder holder;
         LayoutInflater mInflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-        if (convertView == null){
-            convertView = mInflater.inflate(R.layout.songs_list_item,null);
+        if (convertView == null) {
+            convertView = mInflater.inflate(R.layout.songs_list_item, null);
             holder = new ViewHolder();
 
             holder.song_title = (TextView) convertView.findViewById(R.id.song_title);
@@ -60,7 +55,7 @@ public class SongsAdapter extends BaseAdapter {
             Songs single = list_songs.get(position);
 
             holder.song_title.setText(single.getTitle());
-           // holder.duration.setText(String.valueOf(single.getDuration()));
+            // holder.duration.setText(String.valueOf(single.getDuration()));
         }
 
         return convertView;

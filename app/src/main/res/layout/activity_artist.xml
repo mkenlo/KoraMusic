@@ -3,33 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mkenlo.koramusic.ArtistsActivity"
     android:orientation="vertical"
-    android:padding="@dimen/spacing_medium">
+    android:padding="@dimen/spacing_medium"
+    tools:context="com.mkenlo.koramusic.ArtistsActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small"
         android:text="@string/activity_artist_label"
-        android:textAllCaps="true"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:textAllCaps="true" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorPrimary"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@color/colorPrimary" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_artist_desc"
+        android:layout_marginBottom="@dimen/spacing_small"
         android:layout_marginTop="@dimen/spacing_small"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:text="@string/activity_artist_desc" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorPrimary"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@color/colorPrimary" />
 
     <ListView
         android:id="@+id/artists_list"

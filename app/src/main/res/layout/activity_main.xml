@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mkenlo.koramusic.MainActivity"
-    android:padding="@dimen/spacing_medium">
+    android:padding="@dimen/spacing_medium"
+    tools:context="com.mkenlo.koramusic.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small"
         android:text="@string/activity_main_label"
-        android:textAllCaps="true"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:textAllCaps="true" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_main_desc"
-        android:layout_marginTop="@dimen/spacing_small"/>
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/activity_main_desc" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,14 +41,14 @@
 
                 <ImageView
                     android:id="@+id/albums_img"
-                    android:src="@drawable/ic_music_album"
-                    style="@style/categoryImgCardView"/>
+                    style="@style/categoryImgCardView"
+                    android:src="@drawable/ic_music_album" />
 
                 <TextView
                     android:id="@+id/albums_textview"
+                    style="@style/categoryTextOnCardView"
                     android:layout_below="@id/albums_img"
-                    android:text="Albums"
-                    style="@style/categoryTextOnCardView"/>
+                    android:text="Albums" />
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
@@ -55,21 +56,23 @@
         <android.support.v7.widget.CardView
             android:id="@+id/artists_cardview"
             style="@style/categoryCardView">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
                 android:background="@color/purple_100">
+
                 <ImageView
                     android:id="@+id/artists_img"
-                    android:src="@drawable/ic_singer"
-                    style="@style/categoryImgCardView"/>
+                    style="@style/categoryImgCardView"
+                    android:src="@drawable/ic_singer" />
 
                 <TextView
                     android:id="@+id/artists_textview"
-                    android:text="Artists"
+                    style="@style/categoryTextOnCardView"
                     android:layout_below="@id/artists_img"
-                    style="@style/categoryTextOnCardView"/>
+                    android:text="Artists" />
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
@@ -83,25 +86,29 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/playlist_cardview"
-            style="@style/categoryCardView"    >
+            style="@style/categoryCardView">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/red_400">
+
                 <ImageView
                     android:id="@+id/playlist_img"
-                    android:src="@drawable/ic_playlist"
-                    style="@style/categoryImgCardView"/>
+                    style="@style/categoryImgCardView"
+                    android:src="@drawable/ic_playlist" />
+
                 <TextView
                     android:id="@+id/playlist_textview"
-                    android:text="Playlist"
+                    style="@style/categoryTextOnCardView"
                     android:layout_below="@id/playlist_img"
-                    style="@style/categoryTextOnCardView"/>
+                    android:text="Playlist" />
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -109,38 +116,44 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/genre_cardview"
-            style="@style/categoryCardView"  >
+            style="@style/categoryCardView">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/pink_200">
+
                 <ImageView
                     android:id="@+id/genre_img"
-                    android:src="@drawable/ic_dj"
-                    style="@style/categoryImgCardView"/>
+                    style="@style/categoryImgCardView"
+                    android:src="@drawable/ic_dj" />
+
                 <TextView
                     style="@style/categoryTextOnCardView"
-                    android:text="Genre"
-                    android:layout_below="@id/genre_img"/>
+                    android:layout_below="@id/genre_img"
+                    android:text="Genre" />
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:id="@+id/payment_cardview"
-            style="@style/categoryCardView"     >
+            style="@style/categoryCardView">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/blue_100">
+
                 <ImageView
                     android:id="@+id/payment_img"
-                    android:src="@drawable/ic_credit_card"
-                    style="@style/categoryImgCardView"/>
+                    style="@style/categoryImgCardView"
+                    android:src="@drawable/ic_credit_card" />
+
                 <TextView
                     style="@style/categoryTextOnCardView"
-                    android:text="Payment"
-                    android:layout_below="@id/payment_img"/>
+                    android:layout_below="@id/payment_img"
+                    android:text="Payment" />
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>

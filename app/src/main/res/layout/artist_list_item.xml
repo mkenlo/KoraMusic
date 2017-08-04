@@ -1,46 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:descendantFocusability="blocksDescendants"
-    android:layout_marginTop="@dimen/spacing_small"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginBottom="@dimen/spacing_small"
-    android:paddingTop="@dimen/spacing_small"
+    android:layout_marginTop="@dimen/spacing_small"
+    android:descendantFocusability="blocksDescendants"
     android:paddingBottom="@dimen/spacing_small"
-    android:paddingRight="@dimen/spacing_small">
+    android:paddingRight="@dimen/spacing_small"
+    android:paddingTop="@dimen/spacing_small">
 
 
     <ImageView
         android:id="@+id/artist_cover_img"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:src="@drawable/artist"
-        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/artist" />
+
     <TextView
         android:id="@+id/artist_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/artist_name_sample"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/artist_cover_img"
+        android:paddingBottom="@dimen/spacing_small"
         android:paddingLeft="@dimen/spacing_small"
-        android:paddingBottom="@dimen/spacing_small"/>
+        android:text="@string/artist_name_sample" />
+
     <TextView
         android:id="@+id/artist_num_songs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="77 songs"
         android:layout_below="@id/artist_name"
         android:layout_toRightOf="@id/artist_cover_img"
-        android:paddingLeft="@dimen/spacing_small"/>
+        android:paddingLeft="@dimen/spacing_small"
+        android:text="77 songs" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_more_vert"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryLight"
         android:focusable="false"
-        android:background="@color/colorPrimaryLight"/>
+        android:src="@drawable/ic_more_vert" />
 </RelativeLayout>

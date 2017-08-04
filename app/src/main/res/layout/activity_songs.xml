@@ -5,39 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mkenlo.koramusic.SongsActivity"
-    android:padding="@dimen/spacing_medium">
+    android:padding="@dimen/spacing_medium"
+    tools:context="com.mkenlo.koramusic.SongsActivity">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/activity_song_label"
-            android:textAllCaps="true"
-            android:layout_marginBottom="@dimen/spacing_small"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="@dimen/spacing_small"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:text="@string/activity_song_label"
+        android:textAllCaps="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/activity_song_desc"
-            android:layout_marginTop="@dimen/spacing_small"
-            android:layout_marginBottom="@dimen/spacing_small"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="@dimen/spacing_small"/>
-        <ListView
-            android:id="@+id/songs_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@color/colorPrimary" />
 
-        </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/activity_song_desc" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/songs_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
 
 
 </LinearLayout>
