@@ -36,7 +36,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".SplashActivity"></activity>
+
         <activity
             android:name=".SongsActivity"
             android:label="Songs">

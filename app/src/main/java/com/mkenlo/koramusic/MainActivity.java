@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     CardView albumsCardview;
     CardView artistsCardview;
-    CardView songsCardview;
     CardView playlistCardview;
     CardView genreCardview;
     CardView payCardview;
