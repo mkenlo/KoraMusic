@@ -31,7 +31,7 @@
         </activity>
         <activity
             android:name=".ArtistsActivity"
-            android:label="List of Artists">
+            android:label="Artists">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -60,12 +60,17 @@
         </activity>
         <activity
             android:name=".GenreActivity"
-            android:label="Genre - Moods  ">
+            android:label="Genre - Moods">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".PaymentActivity"
+            android:label="Make a payment ">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
