@@ -21,5 +21,15 @@
     <string name="activity_song_desc"> This activity displays a list of song from an album of an artist </string>
     <string name="activity_payment_desc"> This activity shows the use of Google Pay API </string>
 
+    <string name="activity_main_label"> Browse Categories </string>
+    <string name="activity_album_label"> Albums </string>
+    <string name="activity_artist_label"> Artists </string>
+    <string name="activity_genre_label"> Genre and Moods </string>
+    <string name="activity_playing_label"> Now playing </string>
+    <string name="activity_playlist_label"> My playlist </string>
+    <string name="activity_song_label"> Songs </string>
+    <string name="activity_payment_label"> Payment </string>
 
+    <string name="activity_payment_label_2"> Make a Payment </string>
+    <string name="activity_genre_label_2"> Genre - Moods </string>
 </resources>

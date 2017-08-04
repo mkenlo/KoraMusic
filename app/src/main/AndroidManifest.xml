@@ -18,20 +18,19 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".PlayingActivity"
-            android:label="Now Playing">
+            android:label="@string/activity_playing_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".ArtistsActivity"
-            android:label="Artists">
+            android:label="@string/activity_artist_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -39,34 +38,34 @@
 
         <activity
             android:name=".SongsActivity"
-            android:label="Songs">
+            android:label="@string/activity_song_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".AlbumsActivity"
-            android:label="Albums">
+            android:label="@string/activity_album_desc">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".PlayListActivity"
-            android:label="My Playlist">
+            android:label="@string/activity_playlist_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".GenreActivity"
-            android:label="Genre - Moods">
+            android:label="@string/activity_genre_label_2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".PaymentActivity"
-            android:label="Make a payment ">
+            android:label="@string/activity_payment_label_2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
