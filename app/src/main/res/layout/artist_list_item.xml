@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/artist_cover_img"
-        android:layout_width="4@dimen/spacing_small"
-        android:layout_height="4@dimen/spacing_small"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:src="@drawable/artist"
         android:scaleType="centerCrop"
         android:layout_alignParentTop="true"

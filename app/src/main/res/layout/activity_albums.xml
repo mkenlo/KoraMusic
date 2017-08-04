@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +23,12 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorPrimaryLight"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="@dimen/spacing_small"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_album_desc"
             android:layout_marginBottom="@dimen/spacing_small"/>
 
         <android.support.v7.widget.CardView
@@ -32,7 +38,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/red_400">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -49,7 +56,8 @@
                     android:layout_alignParentLeft="true"
                     android:text="@string/artist_name_sample"
                     android:textStyle="bold"
-                    android:layout_margin="@dimen/spacing_small"/>
+                    android:layout_margin="@dimen/spacing_small"
+                    android:textColor="#fff"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -57,7 +65,8 @@
                     android:layout_below="@id/albums_img"
                     android:layout_alignParentRight="true"
                     android:text="@string/song_title_sample"
-                    android:layout_margin="@dimen/spacing_small" />
+                    android:layout_margin="@dimen/spacing_small"
+                    android:textColor="#fff"/>
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>

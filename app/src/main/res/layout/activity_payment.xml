@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wallet="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mkenlo.koramusic.PlayListActivity"
     android:orientation="vertical"
-    android:padding="@dimen/spacing_medium" >
-
+    tools:context="com.mkenlo.koramusic.PaymentActivity"
+    android:padding="@dimen/spacing_medium">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My playlist"
+        android:text="Payment"
         android:textAllCaps="true"
         android:layout_marginBottom="@dimen/spacing_small"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorPrimary"
-        android:layout_marginBottom="@dimen/spacing_small"/>
+        android:background="@color/colorPrimary"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_playlist_desc"
-        android:layout_marginTop="@dimen/spacing_small"/>
+        android:text="@string/activity_payment_desc"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"/>
 
-    <ListView
-        android:id="@+id/playlist"
+
+    <fragment
+        android:name="com.google.android.gms.wallet.fragment.WalletFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
+        android:layout_height="wrap_content"
+        wallet:environment="test"
+        wallet:fragmentMode="buyButton"/>
+
 
 
 </LinearLayout>

@@ -11,4 +11,15 @@
 
     <string name="artist_name_sample">Pharell Williams</string>
     <string name="song_title_sample">Happy</string>
+
+    <string name="activity_main_desc"> This activity displays all the categories available on the app</string>
+    <string name="activity_album_desc"> This activity displays a list of albums, with their author and the title of the album </string>
+    <string name="activity_artist_desc"> This activity displays a list of artists with the number of their albums available on the app</string>
+    <string name="activity_genre_desc"> This activity displays a list of genre, to enable the user to listen to a certain type of music</string>
+    <string name="activity_playing_desc"> This activity shows a track when it is playing</string>
+    <string name="activity_playlist_desc"> This activity display user\'s playlist</string>
+    <string name="activity_song_desc"> This activity displays a list of song from an album of an artist </string>
+    <string name="activity_payment_desc"> This activity shows the use of Google Pay API </string>
+
+
 </resources>

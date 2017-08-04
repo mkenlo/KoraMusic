@@ -19,6 +19,11 @@
         android:layout_height="1dp"
         android:background="@color/colorPrimary"
         android:layout_marginBottom="@dimen/spacing_small"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_genre_desc"
+        android:layout_marginBottom="@dimen/spacing_small"/>
 
     <LinearLayout
         style="@style/categoryCard"
@@ -79,25 +84,6 @@
             android:src="@drawable/ic_chevron_right" />
     </LinearLayout>
 
-
-    <LinearLayout
-        style="@style/categoryCard"
-        android:background="@color/red_100">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_toys" />
-
-        <TextView
-            style="@style/categoryTextView"
-            android:text="Reggae" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_chevron_right" />
-    </LinearLayout>
 
     <LinearLayout
         style="@style/categoryCard"

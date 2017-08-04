@@ -15,67 +15,53 @@ public class MainActivity extends AppCompatActivity {
     CardView songsCardview;
     CardView playlistCardview;
     CardView genreCardview;
-    CardView favCardview;
+    CardView payCardview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Intent artistActivity = new Intent(this, ArtistsActivity.class);
-        final Intent songActivity = new Intent(this, SongsActivity.class);
-        final Intent playlistActivity = new Intent(this, PlayListActivity.class);
-        final Intent albumActivity = new Intent(this, AlbumsActivity.class);
-        final Intent genreActivity = new Intent(this, GenreActivity.class);
-
         albumsCardview = (CardView) findViewById(R.id.albums_cardview);
         artistsCardview = (CardView) findViewById(R.id.artists_cardview);
-      //  songsCardview = (CardView) findViewById(R.id.songs_cardview);
         playlistCardview = (CardView) findViewById(R.id.playlist_cardview);
         genreCardview = (CardView) findViewById(R.id.genre_cardview);
-        favCardview = (CardView) findViewById(R.id.favorite_cardview);
+        payCardview = (CardView) findViewById(R.id.payment_cardview);
 
         albumsCardview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                startActivity(albumActivity);
+                startActivity(new Intent(v.getContext(), AlbumsActivity.class));
             }
         });
 
         artistsCardview.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-                startActivity(artistActivity);
+                startActivity(new Intent(v.getContext(), ArtistsActivity.class));
             }
         });
-
-       /* songsCardview.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-
-                startActivity(songActivity);
-            }
-        });*/
 
         playlistCardview.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-                startActivity(playlistActivity);
+                startActivity(new Intent(v.getContext(), PlayListActivity.class));
             }
         });
 
         genreCardview.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-                startActivity(genreActivity);
+                startActivity(new Intent(v.getContext(), GenreActivity.class));
             }
         });
 
-
+         payCardview.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(v.getContext(), PaymentActivity.class));
+            }
+        });
 
 
     }

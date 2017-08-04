@@ -9,9 +9,16 @@
         android:roundIcon="@mipmap/ic_banjo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- Enables the Android Pay API -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,31 +36,36 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".SplashActivity">
-        </activity>
-        <activity android:name=".SongsActivity"
+        <activity android:name=".SplashActivity"></activity>
+        <activity
+            android:name=".SongsActivity"
             android:label="Songs">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".AlbumsActivity"
+        <activity
+            android:name=".AlbumsActivity"
             android:label="Albums">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".PlayListActivity"
+        <activity
+            android:name=".PlayListActivity"
             android:label="My Playlist">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".GenreActivity"
+        <activity
+            android:name=".GenreActivity"
             android:label="Genre - Moods  ">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".PaymentActivity"></activity>
     </application>
 
 </manifest>
